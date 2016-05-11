@@ -1,0 +1,23 @@
+{
+  "name": "mention",
+  "description": "Monitoreo de redes",
+  "main": "app.js",
+  "authors": [
+    "Jorge Chavez"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.1",
+    "handlebars": "^4.0.5",
+    "tweetparser.js": "^2.2.0",
+    "noty": "^2.3.8"
+  }
+}

@@ -1,0 +1,56 @@
+script(id="entry-medio" type="text/x-handlebars-template").
+  <div class="info-medio">
+    <div class="wrap-info">
+      <div class="left-medio">
+        <div class="coverimage img-medio" style="background-image: url('{{userimg}}')"></div>
+        <div class="names-medio">
+          <div class="top-name">
+            <span>{{name}}</span>
+          </div>
+          <div class="bottom-name">
+            <a href=""><span>@{{title}}</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="right-medio">
+        <a href="#" class="nice-button">
+          <i class="fa fa-{{type}}"></i>
+          <span>Seguir</span>
+        </a>
+      </div>
+    </div>
+  </div>
+script(id="entry-preview" type="text/x-handlebars-template").
+  <div class="wrap-medio">
+    <a class="share-medio" target="_blank" title="Link al medio en {{type}}" href="{{link}}"><i class="fa fa-share"></i><a/>
+    <h5 class="name">{{name}}<h5>
+    <p class="des-medio">{{content}}</p>
+    <div class="center"><img class="big-img-medio" src="{{bigimg}}"></div>
+  </div>
+script(id="entry-template" type="text/x-handlebars-template").
+  <a href="{{link}}" data-id="{{id}}" data-title="{{title}}" data-name="{{name}}" data-bigimg="{{bigimg}}" data-type="{{type}}" data-user="{{title}}" data-userimg="{{userimg}}" data-link="{{link}}" data-content="{{content}}" class="media-item">
+    <article class="item">
+      <span class="hour">
+        <time class="timeago" datetime="{{time}}">{{time}}</time>
+      </span>
+      <div class="item-wrapper">
+        <div class="item-img block">
+          <div style="background-image: url('{{userimg}}')" class="item-img-user coverimage">
+            <div class="item-img-user-type type-{{type}}">
+              <i class="fa fa-{{type}}"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item-content block">
+          <div class="item-content-link">
+            <span>@{{title}}</span>
+          </div>
+          <div class='item-content-text'>
+            <p>
+              {{content}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </a>

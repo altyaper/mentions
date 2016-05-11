@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  include ./templates.jade
+  section(class="main-content")
+    div(id="feed" class="column-h")      
+    div(id="preview" class="column-h")      
+      div(class="in-preview")
+        div(id="display-medio")
+        div(id="display")                        
+          div(class="w-tip")
+            div(class="astable")
+              div(class="ascell")
+                div(class="tip")
+                  i(class="fa fa-bell")
+                div(class="explain")
+                  p Las menciones son mostradas de acuerdo a los hashtags programados.
+                  p Todas las menciones son mostradas en tiempo real.

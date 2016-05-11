@@ -1,0 +1,12 @@
+extends layout
+
+block content  
+  section(class="main-content")
+    div(class="wrap-config")
+      h2(class="title-section") ¿Cual es el tema?
+      p(class="desc-section") Ingresa un tema que quieras monitorear
+      div(class="separator")
+      form(class="add-topic-form" action="/subscriptions" method="post")
+        input(type="text" class="nice-input" name="topic")
+        input(type="submit" value="Guardar" class="nice-button")
+      

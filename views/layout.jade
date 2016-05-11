@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
+    link(rel='stylesheet', href='/stylesheets/styles.css')
+    link(rel="stylesheet", href="/bower_components/animate.css/animate.css")    
+    link(rel="stylesheet", href="/bower_components/font-awesome/css/font-awesome.css")
+    link(rel="icon" type="image/png" href="/images/favicon.ico")
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css')
+  body  
+    header(class="top-bar")
+      div(class="wrap-top-bar")
+        a(class="logo" href="#")
+          i(class="fa fa-bell")
+        div(class="wrap-menu")
+          a(href="/" class="menu-item active")
+            i(class="fa fa-feed")
+            span Feed
+          a(href="/subscriptions" class="menu-item")
+            i(class="fa fa-hashtag")
+            span Temas
+    block content
+    script(src="/socket.io/socket.io.js")
+    script(src="/bower_components/jquery/dist/jquery.js")
+    script(src="/bower_components/handlebars/handlebars.js")
+    script(src="/bower_components/jquery.tweet-parser/dev/jquery.tweetParser.js")    
+    script(src="/bower_components/noty/js/noty/packaged/jquery.noty.packaged.js")
+    script(src="/javascripts/main.js")

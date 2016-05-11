@@ -1,0 +1,15 @@
+extends layout
+
+block content  
+  section(class="main-content")
+    div(class="wrap-config")
+      a(href="/subscription" class="nice-button add-corner")
+        i(class="fa fa-plus")
+        span Agregar tema        
+      h2(class="title-section") Temas actuales
+      p(class="desc-section") Estos son los temas que actualmente te encuentras monitoreando
+      div(class="separator")
+      ul(class="sub-list")
+        each sub in data
+          li= sub.object_id
+      
